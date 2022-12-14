@@ -1,0 +1,9 @@
+The goal for this ticket was to get feedback from the users and in order to do so a step by step rating/feedback mechanism has been written down.
+Given that the user will be providing feedback for the essay, it seemed more sensible to postion the review options after the essay component rather than before it to have a more natural flow of the page, it would have been a bad user experience to scroll back up in order to fill out the review form.
+Other than a review option for those who provide perfect ratings, an internal feedback textarea has been added to capture the feedback of those who might want to suggest improvements.
+
+NOTE FOR THE DEVELOPER:
+The third party & internal feedback handling methods have been written within the "Ratings" component which can be found at "/src/componnents/Ratings/Ratings.tsx".
+The remaining tasks are as follows:
+-Store the textarea alongside the ratings when user clicks on the submit button (Hint: Use a form)
+-Display a thank you message to the user upon providing feedback (Hint: Use a Modal or Toast)
